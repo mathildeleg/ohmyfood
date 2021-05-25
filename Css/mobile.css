@@ -1,0 +1,33 @@
+/* Header */
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 115px;
+}
+
+header img
+{
+    width: 170px;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#location
+{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#location i
+{
+    padding-right: 15px;
+}
