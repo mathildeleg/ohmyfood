@@ -30,9 +30,8 @@ body
 
 h1
 {
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
-    font-family: "Shrikhand-Regular";
 }
 
 /* Header */
@@ -73,11 +72,39 @@ header img
 
 #main-title
 {
-    height: 290px;
+    height: 285px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(245, 244, 244);
+    text-align: center;
 }
+
+#main-title h1
+{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+h2
+{
+    font-size: 20px;
+    opacity: 50%;
+    line-height: 20px;
+    padding: 20px 40px 35px 40px;
+}
+
+button
+{
+    height: 50px;
+    width: 215px;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    background-color: #FF79DA;
+    border: none; 
+}
+
+
 
