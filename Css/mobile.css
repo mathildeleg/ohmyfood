@@ -2,18 +2,23 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(Roboto/Roboto-Black.ttf);
-    src: url(Roboto/Roboto-BlackItalic.ttf);
-    src: url(Roboto/Roboto-Bold.ttf);
-    src: url(Roboto/Roboto-BoldItalic.ttf);
-    src: url(Roboto/Roboto-Italic.ttf);
-    src: url(Roboto/Roboto-Light.ttf);
-    src: url(Roboto/Roboto-LightItalic.ttf);
-    src: url(Roboto/Roboto-Medium.ttf);
-    src: url(Roboto/Roboto-MediumItalic.ttf);
-    src: url(Roboto/Roboto-Regular.ttf);
-    src: url(Roboto/Roboto-Thin.ttf);
-    src: url(Roboto/Roboto-ThinItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Black.ttf);
+    src: url(Fonts/Roboto/Roboto-BlackItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+    src: url(Fonts/Roboto/Roboto-BoldItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Italic.ttf);
+    src: url(Fonts/Roboto/Roboto-Light.ttf);
+    src: url(Fonts/Roboto/Roboto-LightItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Medium.ttf);
+    src: url(Fonts/Roboto/Roboto-MediumItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+    src: url(Fonts/Roboto/Roboto-Thin.ttf);
+    src: url(Fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url(Fonts/Shrikhand/Shrikhand-Regular);
 }
 
 /* Main elements */
@@ -21,6 +26,13 @@
 body
 {
     font-family: "Roboto-Regular", sans-serif;
+}
+
+h1
+{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Shrikhand-Regular";
 }
 
 /* Header */
@@ -45,7 +57,7 @@ header img
 {
     height: 50px;
     width: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(238, 236, 236);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,3 +68,16 @@ header img
 {
     padding-right: 15px;
 }
+
+/* Section 1 : main button */
+
+#main-title
+{
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 244, 244);
+}
+
