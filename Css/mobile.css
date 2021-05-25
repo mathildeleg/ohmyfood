@@ -34,11 +34,6 @@ h1
     font-weight: bold;
 }
 
-section, footer
-{
-    margin: 0 20px 0 20px;
-}
-
 /* Header */
 
 header
@@ -117,6 +112,7 @@ h2
 #function
 {
     height: 420px;
+    margin: 0 20px 0 20px;
 }
 
 #function h1
@@ -141,4 +137,68 @@ h2
     font-weight: bold;
 }
 
+/* Section 3 : cards */
 
+#restaurants
+{
+    height: 1220px;
+    background-color: rgb(238, 236, 236);
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#restaurants h1
+{
+    padding: 60px 0 30px 0;
+    align-self: flex-start;
+}
+
+#restaurants figure
+{
+    width: 335px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#restaurants img
+{
+    height: 175px;
+    width: 335px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px 10px 15px;
+}
+
+.card-title i
+{
+    font-size: 25px;
+}
+
+.card-restaurant
+{
+    line-height: 25px;
+}
+
+.restaurant-name
+{
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer
+{
+    margin: 0 20px 0 20px;
+}
