@@ -301,3 +301,23 @@ footer li
     width: 100%;
     object-fit: cover;
 }
+
+/* Pages differences : menu */
+
+.main-title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Shrikhand;
+}
+
+.menu
+{
+    background-color: #eaeaea;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 40px 20px 0 20px;
+}
