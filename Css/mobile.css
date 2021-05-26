@@ -319,7 +319,7 @@ footer li
     background-color: #eaeaea;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    padding: 40px 20px 0 20px;
+    padding: 40px 20px 60px 20px;
 }
 
 .menu h2
@@ -350,5 +350,13 @@ footer li
 
 .btn-order
 {
-    margin: 40px 0 40px 0;
+    height: 50px;
+    width: 185px;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    display: table;
+    margin: 45px auto 0 auto;
 }
