@@ -139,21 +139,21 @@ h2
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-/* .list-title
+.list-title
 {
-    height: 70px;
     border-radius: 20px;
-    border: none;
-    background-color: #f6f6f6;
-    margin-bottom: 25px;
     box-shadow: 0.1em 0.1em 0.7em rgb(218, 216, 216);
-    font-size: 15px;
-    font-weight: bold;
+    background-color: #f6f6f6;
+    height: 70px;
+    width: 325px;
     display: flex;
     align-items: center;
-} */
+    font-weight: bold;
+    margin-bottom: 25px;
+}
 
 .list-number
 {
@@ -163,7 +163,8 @@ h2
     width: 20px;
     height: 20px;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 25px;
 }
 
 /* Section 3 : cards */
