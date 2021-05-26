@@ -270,6 +270,12 @@ footer li
     line-height: 27px;
 }
 
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
 /* Pages differences : header */
 
 .logo-pages img
