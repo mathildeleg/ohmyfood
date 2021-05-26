@@ -335,6 +335,7 @@ footer li
     background-color: white;
     border-radius: 15px;
     padding: 10px;
+    line-height: 23px;
 }
 
 .menu-container:nth-child(2), .menu-container:nth-child(3), .menu-container:nth-child(4)
@@ -342,10 +343,22 @@ footer li
     margin: 10px 0 10px 0;
 }
 
+.menu-maintitle
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .menu-subtitle
 {
     display: flex;
     justify-content: space-between;
+    font-size: 15px;
+}
+
+.menu-subtitle div
+{
+    font-weight: bold;
 }
 
 .btn-order
