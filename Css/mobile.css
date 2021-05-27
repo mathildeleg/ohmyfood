@@ -115,7 +115,7 @@ header img
     color: white;
 }
 
-/* Section 2 : main buttons */
+/* Section 2 : website's explanation */
 
 #function
 {
@@ -151,8 +151,20 @@ header img
     width: 325px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     font-weight: bold;
     margin-bottom: 25px;
+}
+
+.list-title p
+{
+    padding-right: 45px;
+}
+
+.list-title i
+{
+    padding-left: 10px;
+    font-size: 20px;
 }
 
 .list-number
