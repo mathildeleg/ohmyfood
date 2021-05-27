@@ -209,6 +209,7 @@ header img
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 #restaurants img
@@ -218,6 +219,18 @@ header img
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+figcaption
+{
+    color: #219b7c;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #99E2D0;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .card-title
