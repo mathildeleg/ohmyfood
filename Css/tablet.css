@@ -1,0 +1,72 @@
+/* Font */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Fonts/Roboto/Roboto-Black.ttf);
+    src: url(Fonts/Roboto/Roboto-BlackItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+    src: url(Fonts/Roboto/Roboto-BoldItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Italic.ttf);
+    src: url(Fonts/Roboto/Roboto-Light.ttf);
+    src: url(Fonts/Roboto/Roboto-LightItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Medium.ttf);
+    src: url(Fonts/Roboto/Roboto-MediumItalic.ttf);
+    src: url(Fonts/Roboto/Roboto-Regular.ttf);
+    src: url(Fonts/Roboto/Roboto-Thin.ttf);
+    src: url(Fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url(Fonts/Shrikhand/Shrikhand-Regular);
+}
+
+
+/* Main elements */
+
+body
+{
+    font-family: "Roboto-Regular", sans-serif;
+}
+
+h1
+{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Header */
+
+#header-mainpage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95px;
+    padding-top: 20px;
+}
+
+header img
+{
+    width: 200px;
+    height: 9s0px;
+}
+
+#location
+{
+    height: 50px;
+    width: 100%;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #3a3a3a;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+#location i
+{
+    padding-right: 15px;
+}
