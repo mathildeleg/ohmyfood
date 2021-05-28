@@ -366,3 +366,75 @@ header a
     object-fit: cover;
 }
 
+/* Pages differences : menu */
+
+.main-title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Shrikhand;
+}
+
+.menu
+{
+    background-color: #f6f6f6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 40px 20px 60px 20px;
+}
+
+.menu h2
+{
+    text-transform: uppercase;
+    border-bottom: 3px solid #99E2D0;
+    width: 42px;
+    padding: 30px 0 5px 0;
+}
+
+.menu-container
+{
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    line-height: 23px;
+}
+
+.menu-container:nth-child(2), .menu-container:nth-child(3), .menu-container:nth-child(4)
+{
+    margin: 10px 0 10px 0;
+}
+
+.menu-maintitle
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-subtitle
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.menu-subtitle div
+{
+    font-weight: bold;
+}
+
+.btn-order
+{
+    height: 50px;
+    width: 185px;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    display: table;
+    margin: 45px auto 0 auto;
+}
+
