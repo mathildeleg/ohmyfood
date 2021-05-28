@@ -70,3 +70,261 @@ header img
 {
     padding-right: 15px;
 }
+
+/* Section 1 : website's navigation + function */
+
+#main-title
+{
+    height: 285px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    border-radius: 50px;
+    border: 2px solid #eaeaea;
+}
+
+#main-title h1
+{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#main-title h2
+{
+    font-size: 20px;
+    opacity: 50%;
+    line-height: 20px;
+    padding: 20px 40px 35px 40px;
+}
+
+#explore
+{
+    height: 50px;
+    width: 215px;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+}
+
+#explore a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#navigation
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#function
+{
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px;
+    border-radius: 50px;
+    border: 2px solid #eaeaea;
+}
+
+#function h1
+{
+    padding: 15px 0 20px 0;
+    text-align: center;
+}
+
+#function-list
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-nav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-title
+{
+    border-radius: 20px;
+    box-shadow: 0.1em 0.1em 0.7em rgb(218, 216, 216);
+    background-color: #f6f6f6;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.list-title p
+{
+    padding-right: 45px;
+}
+
+.list-title i
+{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.list-number
+{
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Section 2 : cards */
+
+#restaurants
+{
+    background-color: #f6f6f6;
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#restaurants a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#restaurants h1
+{
+    padding: 30px 0 20px 0;
+    align-self: flex-start;
+}
+
+#restaurants figure
+{
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    margin: 15px;
+}
+
+#restaurants img
+{
+    height: 175px;
+    width: 400px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+figcaption
+{
+    color: #219b7c;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #99E2D0;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px 10px 15px;
+}
+
+.card-title i
+{
+    font-size: 25px;
+    color: #7f7f7f;
+}
+
+.card-restaurant
+{
+    line-height: 25px;
+}
+
+.restaurant-name
+{
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer
+{
+    padding: 0 30px 25px 30px;
+    background-color: #353535;
+    color: #f7f7f7;
+    height: 80px;
+}
+
+footer img
+{
+    height: 18px;
+    padding: 20px 0 20px 0;
+    filter: invert(100%);
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+footer ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer i
+{
+    font-size: 13px;
+}
+
+.fa-utensils
+{
+    padding-right: 13px;
+}
+
+.fa-hands-helping
+{
+    padding-right: 8px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
