@@ -205,11 +205,10 @@ header img
     align-items: center;
 }
 
-#row
+.row
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
