@@ -411,3 +411,46 @@ header a
     display: table;
     margin: 45px auto 0 auto;
 }
+
+/* Animations */
+
+/* .loadingspinner-container {
+    position: relative;
+}
+
+.loading-spinner {
+    cursor: progress;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.loading-spinner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 1;
+}
+
+.loading-spinner::after {
+    box-sizing: border-box;
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #FF79DA;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: custom-loading 1s linear infinite;
+}
+
+@keyframes custom-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
