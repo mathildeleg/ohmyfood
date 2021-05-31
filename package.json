@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch ./scss/mobile.scss:.public/css/mobile.css"
+    "scss:watch": "node-sass --watch ./scss/mobile.scss ./public/css/mobile.css",
+    "scss": "node-sass ./scss/mobile.scss ./public/css/mobile.css"
   },
   "author": "\"\"",
   "license": "ISC",
