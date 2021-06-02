@@ -30,6 +30,27 @@ $gray-color: #eaeaea;
 $lightgray-color: #f6f6f6;
 $white-color: white;
 
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexSpaceBet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 body
 {
     font-family: "Roboto-Regular", sans-serif;
@@ -45,9 +66,7 @@ h1
 
 #header-mainpage
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexColumn();
     height: 95px;
     padding-top: 20px;
 }
@@ -63,10 +82,7 @@ header img
     height: 50px;
     width: 100%;
     background-color: $gray-color;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flexRow();
     color: #3a3a3a;
     font-weight: bold;
     margin-top: 12px;
@@ -82,10 +98,7 @@ header img
 #main-title
 {
     height: 285px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexColumn();
     background-color: $lightgray-color;
     text-align: center;
     margin: 0;
@@ -105,6 +118,8 @@ header img
     padding: 20px 40px 35px 40px;
 }
 
+/* buttons */
+
 .btn
 {
     height: 50px;
@@ -114,46 +129,41 @@ header img
     font-size: 15px;
     background: linear-gradient($primary-color, $secondary-color);
     border: none;
-    a {
-    text-decoration: none;
-    color: $white-color;
-    }
-    &--order
-    {
-        width: 185px;
-        margin: 45px auto 0 auto;
-        display: table;
-        
-    }
+        a{
+        text-decoration: none;
+        color: $white-color;
+        }
+            &--order{
+            width: 185px;
+            margin: 45px auto 0 auto;
+            display: table;
+            }
+            &:hover{
+                background: linear-gradient(170deg, lighten($secondary-color, 8%), lighten($primary-color, 8%));
+
+            }
 }
 
 /* Section 2 : website's explanation */
 
-#function
-{
+#function {
     height: 420px;
     margin: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
-}
-
-#function h1
-{
-    padding: 50px 0 30px 0;
+        h1 {
+        padding: 50px 0 30px 0;
+        }
 }
 
 #function-list
 {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn();
 }
 
 .list-nav
 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flexRow();
 }
 
 .list-title
@@ -200,9 +210,7 @@ header img
     height: 1220px;
     background-color: $lightgray-color;
     padding: 0 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexColumn();
 }
 
 #restaurants a
@@ -249,10 +257,7 @@ figcaption
 
 .card-title
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexSpaceBet();
     padding: 10px 25px 10px 15px;
 }
 
@@ -325,9 +330,7 @@ footer a
 
 .header-nav
 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexSpaceBet();
     width: 100%;
     height: 60px;
 }
@@ -356,9 +359,7 @@ header a
 
 .main-title
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexSpaceBet();
     font-size: 30px;
     font-style: italic;
     font-family: Shrikhand;
@@ -401,8 +402,7 @@ header a
 
 .menu-subtitle
 {
-    display: flex;
-    justify-content: space-between;
+    @include flexSpaceBet();
     font-size: 15px;
 }
 
@@ -413,7 +413,9 @@ header a
 
 /* Animations */
 
-/* .loadingspinner-container {
+/* 
+
+.loadingspinner-container {
     position: relative;
 }
 
@@ -452,4 +454,5 @@ header a
 @keyframes custom-loading {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-} */
+} 
+*/
