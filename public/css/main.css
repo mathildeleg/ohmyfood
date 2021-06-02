@@ -52,9 +52,8 @@ header img {
   color: #3a3a3a;
   font-weight: bold;
   margin-top: 12px; }
-
-#location i {
-  padding-right: 15px; }
+  #location i {
+    padding-right: 15px; }
 
 /* Section 1 : explore button */
 #main-title {
@@ -66,15 +65,13 @@ header img {
   background-color: #f6f6f6;
   text-align: center;
   margin: 0; }
-
-#main-title h1 {
-  padding: 0 60px 0 60px; }
-
-#main-title h2 {
-  font-size: 20px;
-  opacity: 50%;
-  line-height: 20px;
-  padding: 20px 40px 35px 40px; }
+  #main-title h1 {
+    padding: 0 60px 0 60px; }
+  #main-title h2 {
+    font-size: 20px;
+    opacity: 50%;
+    line-height: 20px;
+    padding: 20px 40px 35px 40px; }
 
 /* buttons */
 .btn {
