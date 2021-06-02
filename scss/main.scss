@@ -1,6 +1,6 @@
 /* Font */
 
-@font-face {
+@font-face{
     font-family: "Roboto";
     src: url(Fonts/Roboto/Roboto-Black.ttf);
     src: url(Fonts/Roboto/Roboto-BlackItalic.ttf);
@@ -16,7 +16,7 @@
     src: url(Fonts/Roboto/Roboto-ThinItalic.ttf);
 }
 
-@font-face {
+@font-face{
     font-family: "Shrikhand";
     src: url(Fonts/Shrikhand/Shrikhand-Regular);
 }
@@ -28,25 +28,26 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $gray-color: #eaeaea;
 $lightgray-color: #f6f6f6;
+$darkgray-color: #353535;
 $white-color: white;
 
 /* mixins */ 
 
-@mixin flexColumn {
+@mixin flexColumn{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@mixin flexRow {
+@mixin flexRow{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-@mixin flexSpaceBet {
+@mixin flexSpaceBet{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,34 +56,29 @@ $white-color: white;
 
 /* main elements */
 
-body
-{
+body{
     font-family: "Roboto-Regular", sans-serif;
 }
 
-h1
-{
+h1{
     font-size: 23px;
     font-weight: bold;
 }
 
 /* Header */
 
-#header-mainpage
-{
+#header-mainpage{
     @include flexColumn();
     height: 95px;
     padding-top: 20px;
 }
 
-header img
-{
+header im{
     width: 170px;
     height: 30px;
 }
 
-#location
-{
+#location{
     height: 50px;
     width: 100%;
     background-color: $gray-color;
@@ -97,8 +93,7 @@ header img
 
 /* Section 1 : explore button */
 
-#main-title
-{
+#main-title{
     height: 285px;
     @include flexColumn();
     background-color: $lightgray-color;
@@ -117,8 +112,7 @@ header img
 
 /* buttons */
 
-.btn
-{
+.btn{
     height: 50px;
     width: 215px;
     border-radius: 50px;
@@ -127,44 +121,41 @@ header img
     background: linear-gradient($primary-color, $secondary-color);
     border: none;
         a{
-        text-decoration: none;
-        color: $white-color;
+            text-decoration: none;
+            color: $white-color;
         }
             &--order{
-            width: 185px;
-            margin: 45px auto 0 auto;
-            display: table;
+                width: 185px;
+                margin: 45px auto 0 auto;
+                display: table;
             }
-            &:hover{
-                background: linear-gradient(170deg, lighten($secondary-color, 8%), lighten($primary-color, 8%));
+                &:hover{
+                    background: linear-gradient(170deg, lighten($secondary-color, 5%), lighten($primary-color, 5%));
 
             }
 }
 
 /* Section 2 : website's explanation */
 
-#function {
+#function{
     height: 420px;
     margin: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
         h1 {
-        padding: 50px 0 30px 0;
+            padding: 50px 0 30px 0;
         }
 }
 
-#function-list
-{
+#function-list{
     @include flexColumn();
 }
 
-.list-nav
-{
+.list-nav{
     @include flexRow();
 }
 
-.list-title
-{
+.list-title{
     border-radius: 20px;
     box-shadow: 0.1em 0.1em 0.7em rgb(218, 216, 216);
     background-color: $lightgray-color;
@@ -176,16 +167,15 @@ header img
     font-weight: bold;
     margin-bottom: 25px;
         p{
-        padding-right: 45px;
+            padding-right: 45px;
         }
             i{
-            padding-left: 10px;
-            font-size: 20px;
+                padding-left: 10px;
+                font-size: 20px;
             }
 }
 
-.list-number
-{
+.list-number{
     background-color: $primary-color;
     color: $white-color;
     border-radius: 50px;
@@ -198,38 +188,36 @@ header img
 
 /* Section 3 : cards */
 
-#restaurants
-{
+#restaurants{
     height: 1220px;
     background-color: $lightgray-color;
     padding: 0 20px 0 20px;
     @include flexColumn();
-        a{
+    a{
         text-decoration: none;
         color: black;
-        }
-            h1{
+    }
+        h1{
             padding: 60px 0 30px 0;
             align-self: flex-start;
+        }
+            figure{
+                width: 335px;
+                background-color: $white-color;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                position: relative;
             }
-                figure{
+                img{
+                    height: 175px;
                     width: 335px;
-                    background-color: $white-color;
-                    border-radius: 20px;
-                    margin-bottom: 20px;
-                    position: relative;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
                 }
-                    img{
-                        height: 175px;
-                        width: 335px;
-                        object-fit: cover;
-                        border-top-left-radius: 20px;
-                        border-top-right-radius: 20px;
-                    }
 }
 
-figcaption
-{
+figcaption{
     color: #219b7c;
     position: absolute;
     top: 20px;
@@ -240,34 +228,29 @@ figcaption
     font-weight: bold;
 }
 
-.card-title
-{
+.card-title{
     @include flexSpaceBet();
     padding: 10px 25px 10px 15px;
-        i
-        {
-        font-size: 25px;
-        color: #7f7f7f;
+        i{
+            font-size: 25px;
+            color: #7f7f7f;
         }
 }
 
-.card-restaurant
-{
+.card-restaurant{
     line-height: 25px;
 }
 
-.restaurant-name
-{
+.restaurant-name{
     font-weight: bold;
 }
 
 /* Footer */
 
-footer
-{
+footer{
     padding: 0 20px 0 20px;
-    background-color: #353535;
-    color: #f7f7f7;
+    background-color: $darkgray-color;
+    color: $white-color;
     height: 200px;
         img{
             height: 18px;
@@ -286,44 +269,36 @@ footer
                     }
 }
 
-.fa-utensils
-{
+.fa-utensils{
     padding-right: 13px;
 }
 
-.fa-hands-helping
-{
+.fa-hands-helping{
     padding-right: 8px;
 }
 
 /* Pages differences : header */
 
-.logo-pages img
-{
-    width: 150px;
-    height: 25px;
-}
-
-.header-nav
-{
+.header-nav{
     @include flexSpaceBet();
     width: 100%;
     height: 60px;
         i{
-        font-size: 20px;
-        padding-left: 50px;
+            font-size: 20px;
+            padding-left: 50px;
         }
-}
-
-header a
-{
-    color: black;
+            a{
+                color: black;
+            }
+                img{
+                    width: 150px;
+                    height: 25px;
+                }
 }
 
 /* Pages differences : main img */
 
-.main-img
-{
+.main-img{
     height: 265px;
     width: 100%;
     object-fit: cover;
@@ -331,16 +306,14 @@ header a
 
 /* Pages differences : menu */
 
-.main-title
-{
+.main-title{
     @include flexSpaceBet();
     font-size: 30px;
     font-style: italic;
     font-family: Shrikhand;
 }
 
-.menu
-{
+.menu{
     background-color: $lightgray-color;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -353,8 +326,7 @@ header a
         }
 }
 
-.menu-container
-{
+.menu-container{
     background-color: $white-color;
     border-radius: 15px;
     padding: 10px;
@@ -364,14 +336,12 @@ header a
         }
 }
 
-.menu-maintitle
-{
+.menu-maintitle{
     font-weight: bold;
     font-size: 18px;
 }
 
-.menu-subtitle
-{
+.menu-subtitle{
     @include flexSpaceBet();
     font-size: 15px;
         div{

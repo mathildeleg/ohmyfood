@@ -37,7 +37,7 @@ h1 {
   height: 95px;
   padding-top: 20px; }
 
-header img {
+header im {
   width: 170px;
   height: 30px; }
 
@@ -90,7 +90,7 @@ header img {
     margin: 45px auto 0 auto;
     display: table; }
   .btn:hover {
-    background: linear-gradient(170deg, #ffa2e5, #a978e3); }
+    background: linear-gradient(170deg, #ff93e1, #a16be0); }
 
 /* Section 2 : website's explanation */
 #function {
@@ -198,7 +198,7 @@ figcaption {
 footer {
   padding: 0 20px 0 20px;
   background-color: #353535;
-  color: #f7f7f7;
+  color: white;
   height: 200px; }
   footer img {
     height: 18px;
@@ -219,10 +219,6 @@ footer {
   padding-right: 8px; }
 
 /* Pages differences : header */
-.logo-pages img {
-  width: 150px;
-  height: 25px; }
-
 .header-nav {
   display: flex;
   flex-direction: row;
@@ -233,9 +229,11 @@ footer {
   .header-nav i {
     font-size: 20px;
     padding-left: 50px; }
-
-header a {
-  color: black; }
+  .header-nav a {
+    color: black; }
+  .header-nav img {
+    width: 150px;
+    height: 25px; }
 
 /* Pages differences : main img */
 .main-img {
