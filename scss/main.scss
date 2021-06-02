@@ -54,7 +54,7 @@ $white-color: white;
     justify-content: space-between;
 }
 
-@mixin shadow-box($color: darken($gray-color, 20%)){
+@mixin box-shadow($color: darken($gray-color, 20%)){
     box-shadow: 0 3px 8px $color;
 }
 
@@ -124,7 +124,7 @@ header img{
     font-size: 15px;
     background: linear-gradient($primary-color, $secondary-color);
     border: none;
-    @include shadow-box();
+    @include box-shadow();
         a{
             text-decoration: none;
             color: $white-color;
@@ -136,7 +136,7 @@ header img{
             }
                 &:hover{
                     background: linear-gradient(170deg, lighten($secondary-color, 5%), lighten($primary-color, 5%));
-                     @include shadow-box(darken($gray-color, 30%));
+                     @include box-shadow(darken($gray-color, 30%));
             }
 }
 
@@ -162,7 +162,7 @@ header img{
 
 .list-title{
     border-radius: 20px;
-    @include shadow-box();
+    @include box-shadow();
     background-color: $lightgray-color;
     height: 70px;
     width: 325px;
@@ -212,7 +212,7 @@ header img{
                 border-radius: 20px;
                 margin-bottom: 20px;
                 position: relative;
-                @include shadow-box();
+                @include box-shadow();
             }
                 img{
                     height: 175px;
@@ -337,7 +337,7 @@ footer{
     border-radius: 15px;
     padding: 10px;
     line-height: 23px;
-    @include shadow-box();
+    @include box-shadow();
         :nth-child(2), :nth-child(3), :nth-child(4){
             margin: 10px 0 10px 0;
         }
