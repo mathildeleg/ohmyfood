@@ -114,6 +114,12 @@ header img {
     width: 150px;
     height: 25px; }
 
+@media only screen and (min-width: 750px) {
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
+
 footer {
   padding: 0 20px 0 20px;
   background-color: #353535;
@@ -227,6 +233,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (min-width: 750px) {
+    #restaurants {
+      background-color: white;
+      padding: 0 30px 0 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; } }
   #restaurants a {
     text-decoration: none;
     color: black; }
@@ -298,48 +312,3 @@ figcaption {
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
-
-/* Animations */
-/* 
-
-.loadingspinner-container {
-    position: relative;
-}
-
-.loading-spinner {
-    cursor: progress;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.loading-spinner::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: $white-color;
-    opacity: 1;
-}
-
-.loading-spinner::after {
-    box-sizing: border-box;
-    z-index: 1;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -25px 0 0 -25px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #FF79DA;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: custom-loading 1s linear infinite;
-}
-
-@keyframes custom-loading {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-} 
-*/

@@ -101,23 +101,6 @@ header img
     padding: 20px 40px 35px 40px;
 }
 
-#explore
-{
-    height: 50px;
-    width: 215px;
-    border-radius: 50px;
-    color: white;
-    font-size: 15px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    border: none;
-}
-
-#explore a
-{
-    text-decoration: none;
-    color: white;
-}
-
 #navigation
 {
     display: flex;

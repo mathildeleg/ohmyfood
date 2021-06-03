@@ -41,3 +41,12 @@ header img{
                     height: 25px;
                 }
 }
+
+#navigation
+{
+    @include respond(tablet){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+}
