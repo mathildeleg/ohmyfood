@@ -57,12 +57,3 @@ header img{
                     }
                 }
 }
-
-#navigation
-{
-    @include respond(tablet){
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-}

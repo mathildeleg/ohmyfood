@@ -139,12 +139,6 @@ header img {
       .header-nav img {
         height: 30px; } }
 
-@media only screen and (min-width: 750px) {
-  #navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center; } }
-
 footer {
   padding: 0 20px 0 20px;
   background-color: #353535;
@@ -211,11 +205,23 @@ footer {
   background-color: #f6f6f6;
   text-align: center;
   margin: 0; }
+  @media only screen and (min-width: 750px) {
+    #main-title {
+      width: 50%;
+      margin: 30px;
+      border-radius: 50px;
+      border: 2px solid #f6f6f6; } }
   #main-title h1 {
     padding: 0 60px 0 60px; }
   #main-title h2 {
     opacity: 50%;
     padding: 20px 40px 35px 40px; }
+
+@media only screen and (min-width: 750px) {
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
 
 /* Section 2 : website's explanation */
 #function {
@@ -223,8 +229,18 @@ footer {
   margin: 0 20px 0 20px;
   display: flex;
   flex-direction: column; }
+  @media only screen and (min-width: 750px) {
+    #function {
+      height: 285px;
+      width: 50%;
+      border-radius: 50px;
+      border: 2px solid #f6f6f6; } }
   #function h1 {
     padding: 50px 0 30px 0; }
+    @media only screen and (min-width: 750px) {
+      #function h1 {
+        padding: 15px 0 20px 0;
+        text-align: center; } }
 
 #function-list {
   display: flex;
@@ -248,6 +264,10 @@ footer {
   align-items: center;
   justify-content: space-around;
   margin-bottom: 25px; }
+  @media only screen and (min-width: 750px) {
+    .list-title {
+      height: 50px;
+      width: 300px; } }
   .list-title p {
     padding-right: 45px; }
   .list-title i {
@@ -278,7 +298,8 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; } }
+      align-items: center;
+      height: 700px; } }
   #restaurants a {
     text-decoration: none;
     color: black; }
@@ -287,7 +308,7 @@ footer {
     align-self: flex-start; }
     @media only screen and (min-width: 750px) {
       #restaurants h1 {
-        padding: 30px 0 20px 0; } }
+        padding: 20px 0 0 0; } }
   #restaurants figure {
     width: 335px;
     background-color: white;
@@ -297,13 +318,19 @@ footer {
     box-shadow: 0 3px 8px #b7b7b7; }
     @media only screen and (min-width: 750px) {
       #restaurants figure {
-        margin: 15px; } }
+        margin: 0 15px 15px 15px; } }
+  @media only screen and (min-width: 750px) and (min-width: 1024px) {
+    #restaurants figure {
+      width: 500px; } }
   #restaurants img {
     height: 175px;
     width: 335px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; }
+    @media only screen and (min-width: 1024px) {
+      #restaurants img {
+        width: 500px; } }
 
 @media only screen and (min-width: 750px) {
   .row {

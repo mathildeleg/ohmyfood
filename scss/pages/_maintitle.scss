@@ -6,6 +6,12 @@
     background-color: $lightgray-color;
     text-align: center;
     margin: 0;
+    @include respond(tablet){
+        width: 50%;
+        margin: 30px;
+        border-radius: 50px;
+        border: 2px solid $lightgray-color;
+        }
         h1{
             padding: 0 60px 0 60px;
         }
@@ -13,4 +19,13 @@
                 opacity: 50%;
                 padding: 20px 40px 35px 40px;
             }
+}
+
+#navigation
+{
+    @include respond(tablet){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
 }

@@ -5,8 +5,18 @@
     margin: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
+    @include respond(tablet){
+        height: 285px;
+        width: 50%;
+        border-radius: 50px;
+        border: 2px solid $lightgray-color;
+    }
         h1 {
             padding: 50px 0 30px 0;
+            @include respond(tablet){
+                padding: 15px 0 20px 0;
+                text-align: center;
+            }
         }
 }
 
@@ -28,6 +38,10 @@
     align-items: center;
     justify-content: space-around;
     margin-bottom: 25px;
+    @include respond(tablet){
+        height: 50px;
+        width: 300px;
+    }
         p{
             padding-right: 45px;
         }
