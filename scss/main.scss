@@ -1,62 +1,9 @@
-/* Font */
-
-@font-face{
-    font-family: "Roboto";
-    src: url(Fonts/Roboto/Roboto-Black.ttf);
-    src: url(Fonts/Roboto/Roboto-BlackItalic.ttf);
-    src: url(Fonts/Roboto/Roboto-Bold.ttf);
-    src: url(Fonts/Roboto/Roboto-BoldItalic.ttf);
-    src: url(Fonts/Roboto/Roboto-Italic.ttf);
-    src: url(Fonts/Roboto/Roboto-Light.ttf);
-    src: url(Fonts/Roboto/Roboto-LightItalic.ttf);
-    src: url(Fonts/Roboto/Roboto-Medium.ttf);
-    src: url(Fonts/Roboto/Roboto-MediumItalic.ttf);
-    src: url(Fonts/Roboto/Roboto-Regular.ttf);
-    src: url(Fonts/Roboto/Roboto-Thin.ttf);
-    src: url(Fonts/Roboto/Roboto-ThinItalic.ttf);
-}
-
-@font-face{
-    font-family: "Shrikhand";
-    src: url(Fonts/Shrikhand/Shrikhand-Regular);
-}
-
-/* variables */
-
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$gray-color: #eaeaea;
-$lightgray-color: #f6f6f6;
-$darkgray-color: #353535;
-$white-color: white;
-
-/* mixins */ 
-
-@mixin flexColumn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-@mixin flexRow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-@mixin flexSpaceBet{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@mixin box-shadow($color: darken($gray-color, 20%)){
-    box-shadow: 0 3px 8px $color;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/font-face";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/buttons";
 
 /* main elements */
 
@@ -67,32 +14,6 @@ body{
 h1{
     font-size: 23px;
     font-weight: bold;
-}
-
-/* Header */
-
-#header-mainpage{
-    @include flexColumn();
-    height: 95px;
-    padding-top: 20px;
-}
-
-header img{
-    width: 170px;
-    height: 30px;
-}
-
-#location{
-    height: 50px;
-    width: 100%;
-    background-color: $gray-color;
-    @include flexRow();
-    color: $darkgray-color;
-    font-weight: bold;
-    margin-top: 12px;
-        i{
-            padding-right: 15px;
-        }
 }
 
 /* Section 1 : explore button */
@@ -111,32 +32,6 @@ header img{
                 opacity: 50%;
                 line-height: 20px;
                 padding: 20px 40px 35px 40px;
-            }
-}
-
-/* buttons */
-
-.btn{
-    height: 50px;
-    width: 215px;
-    border-radius: 50px;
-    color: $white-color;
-    font-size: 15px;
-    background: linear-gradient($primary-color, $secondary-color);
-    border: none;
-    @include box-shadow();
-        a{
-            text-decoration: none;
-            color: $white-color;
-        }
-            &--order{
-                width: 185px;
-                margin: 45px auto 0 auto;
-                display: table;
-            }
-                &:hover{
-                    background: linear-gradient(170deg, lighten($secondary-color, 5%), lighten($primary-color, 5%));
-                     @include box-shadow(darken($gray-color, 30%));
             }
 }
 
@@ -249,57 +144,6 @@ figcaption{
 
 .restaurant-name{
     font-weight: bold;
-}
-
-/* Footer */
-
-footer{
-    padding: 0 20px 0 20px;
-    background-color: $darkgray-color;
-    color: $white-color;
-    height: 200px;
-        img{
-            height: 18px;
-            padding: 20px 0 10px 0;
-            filter: invert(100%);
-        }
-            i{
-                font-size: 13px;
-            }
-                li{
-                    line-height: 27px;
-                }
-                    a{
-                        text-decoration: none;
-                        color: $white-color;
-                    }
-}
-
-.fa-utensils{
-    padding-right: 13px;
-}
-
-.fa-hands-helping{
-    padding-right: 8px;
-}
-
-/* Pages differences : header */
-
-.header-nav{
-    @include flexSpaceBet();
-    width: 100%;
-    height: 60px;
-        i{
-            font-size: 20px;
-            padding-left: 50px;
-        }
-            a{
-                color: black;
-            }
-                img{
-                    width: 150px;
-                    height: 25px;
-                }
 }
 
 /* Pages differences : main img */

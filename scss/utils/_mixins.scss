@@ -1,0 +1,24 @@
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexSpaceBet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin box-shadow($color: darken($gray-color, 20%)){
+    box-shadow: 0 3px 8px $color;
+}

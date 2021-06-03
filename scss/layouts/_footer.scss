@@ -1,0 +1,29 @@
+footer{
+    padding: 0 20px 0 20px;
+    background-color: $darkgray-color;
+    color: $white-color;
+    height: 200px;
+        img{
+            height: 18px;
+            padding: 20px 0 10px 0;
+            filter: invert(100%);
+        }
+            i{
+                font-size: 13px;
+            }
+                li{
+                    line-height: 27px;
+                }
+                    a{
+                        text-decoration: none;
+                        color: $white-color;
+                    }
+}
+
+.fa-utensils{
+    padding-right: 13px;
+}
+
+.fa-hands-helping{
+    padding-right: 8px;
+}
