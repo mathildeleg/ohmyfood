@@ -1,20 +1,10 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/font-face";
+@import "./base/typography";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./components/buttons";
-
-/* main elements */
-
-body{
-    font-family: "Roboto-Regular", sans-serif;
-}
-
-h1{
-    font-size: 23px;
-    font-weight: bold;
-}
 
 /* Section 1 : explore button */
 
@@ -28,9 +18,7 @@ h1{
             padding: 0 60px 0 60px;
         }
             h2{
-                font-size: 20px;
                 opacity: 50%;
-                line-height: 20px;
                 padding: 20px 40px 35px 40px;
             }
 }
@@ -64,14 +52,12 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-weight: bold;
     margin-bottom: 25px;
         p{
             padding-right: 45px;
         }
             i{
                 padding-left: 10px;
-                font-size: 20px;
             }
 }
 
@@ -82,7 +68,6 @@ h1{
     width: 20px;
     height: 20px;
     text-align: center;
-    font-size: 14px;
     margin-bottom: 25px;
 }
 
@@ -125,25 +110,11 @@ figcaption{
     right: 20px;
     background-color: $tertiary-color;
     padding: 7px 10px;
-    font-size: 13px;
-    font-weight: bold;
 }
 
 .card-title{
     @include flexSpaceBet();
     padding: 10px 25px 10px 15px;
-        i{
-            font-size: 25px;
-            color: #7f7f7f;
-        }
-}
-
-.card-restaurant{
-    line-height: 25px;
-}
-
-.restaurant-name{
-    font-weight: bold;
 }
 
 /* Pages differences : main img */
@@ -158,9 +129,6 @@ figcaption{
 
 .main-title{
     @include flexSpaceBet();
-    font-size: 30px;
-    font-style: italic;
-    font-family: Shrikhand;
 }
 
 .menu{
@@ -169,7 +137,6 @@ figcaption{
     border-top-right-radius: 30px;
     padding: 40px 20px 60px 20px;
         h2{
-            text-transform: uppercase;
             border-bottom: 3px solid $tertiary-color;
             width: 42px;
             padding: 30px 0 5px 0;
@@ -180,24 +147,14 @@ figcaption{
     background-color: $white-color;
     border-radius: 15px;
     padding: 10px;
-    line-height: 23px;
     @include box-shadow();
         :nth-child(2), :nth-child(3), :nth-child(4){
             margin: 10px 0 10px 0;
         }
 }
 
-.menu-maintitle{
-    font-weight: bold;
-    font-size: 18px;
-}
-
 .menu-subtitle{
     @include flexSpaceBet();
-    font-size: 15px;
-        div{
-            font-weight: bold;
-        }
 }
 
 /* Animations */
