@@ -1,0 +1,39 @@
+/* Pages differences : main img */
+
+.main-img{
+    height: 265px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Pages differences : menu */
+
+.main-title{
+    @include flexSpaceBet();
+}
+
+.menu{
+    background-color: $lightgray-color;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 40px 20px 60px 20px;
+        h2{
+            border-bottom: 3px solid $tertiary-color;
+            width: 42px;
+            padding: 30px 0 5px 0;
+        }
+}
+
+.menu-container{
+    background-color: $white-color;
+    border-radius: 15px;
+    padding: 10px;
+    @include box-shadow();
+        :nth-child(2), :nth-child(3), :nth-child(4){
+            margin: 10px 0 10px 0;
+        }
+}
+
+.menu-subtitle{
+    @include flexSpaceBet();
+}

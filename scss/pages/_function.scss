@@ -1,0 +1,47 @@
+/* Section 2 : website's explanation */
+
+#function{
+    height: 420px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+        h1 {
+            padding: 50px 0 30px 0;
+        }
+}
+
+#function-list{
+    @include flexColumn();
+}
+
+.list-nav{
+    @include flexRow();
+}
+
+.list-title{
+    border-radius: 20px;
+    @include box-shadow();
+    background-color: $lightgray-color;
+    height: 70px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+        p{
+            padding-right: 45px;
+        }
+            i{
+                padding-left: 10px;
+            }
+}
+
+.list-number{
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
