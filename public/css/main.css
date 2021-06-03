@@ -76,6 +76,9 @@ figcaption {
   .menu-subtitle div {
     font-weight: bold; }
 
+footer i {
+  font-size: 13px; }
+
 /* Main page */
 #header-mainpage {
   display: flex;
@@ -147,17 +150,30 @@ footer {
   background-color: #353535;
   color: white;
   height: 200px; }
+  @media only screen and (min-width: 750px) {
+    footer {
+      padding: 0 30px 25px 30px;
+      height: 80px; } }
   footer img {
     height: 18px;
     padding: 20px 0 10px 0;
     filter: invert(100%); }
-  footer i {
-    font-size: 13px; }
+    @media only screen and (min-width: 750px) {
+      footer img {
+        text-align: center;
+        margin: auto;
+        display: flex; } }
   footer li {
     line-height: 27px; }
   footer a {
     text-decoration: none;
     color: white; }
+  @media only screen and (min-width: 750px) {
+    footer ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; } }
 
 .fa-utensils {
   padding-right: 13px; }

@@ -228,54 +228,6 @@ figcaption
     font-weight: bold;
 }
 
-/* Footer */
-
-footer
-{
-    padding: 0 30px 25px 30px;
-    background-color: #353535;
-    color: #f7f7f7;
-    height: 80px;
-}
-
-footer img
-{
-    height: 18px;
-    padding: 20px 0 20px 0;
-    filter: invert(100%);
-    text-align: center;
-    margin: auto;
-    display: flex;
-}
-
-footer ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer i
-{
-    font-size: 13px;
-}
-
-.fa-utensils
-{
-    padding-right: 13px;
-}
-
-.fa-hands-helping
-{
-    padding-right: 8px;
-}
-
-footer a
-{
-    text-decoration: none;
-    color: white;
-}
-
 /* Pages differences : main img */
 
 .main-img
