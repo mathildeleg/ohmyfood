@@ -285,6 +285,9 @@ footer {
   #restaurants h1 {
     padding: 60px 0 30px 0;
     align-self: flex-start; }
+    @media only screen and (min-width: 750px) {
+      #restaurants h1 {
+        padding: 30px 0 20px 0; } }
   #restaurants figure {
     width: 335px;
     background-color: white;
@@ -292,12 +295,22 @@ footer {
     margin-bottom: 20px;
     position: relative;
     box-shadow: 0 3px 8px #b7b7b7; }
+    @media only screen and (min-width: 750px) {
+      #restaurants figure {
+        margin: 15px; } }
   #restaurants img {
     height: 175px;
     width: 335px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; }
+
+@media only screen and (min-width: 750px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; } }
 
 figcaption {
   color: #219b7c;
@@ -335,15 +348,17 @@ figcaption {
   .menu h2 {
     border-bottom: 3px solid #99E2D0;
     width: 42px;
-    padding: 30px 0 5px 0; }
+    padding: 30px 0 5px 0;
+    margin-bottom: 15px; }
 
 .menu-container {
   background-color: white;
   border-radius: 15px;
   padding: 10px;
   box-shadow: 0 3px 8px #b7b7b7; }
-  .menu-container :nth-child(2), .menu-container :nth-child(3), .menu-container :nth-child(4) {
-    margin: 10px 0 10px 0; }
+
+.menu-container:nth-child(2), .menu-container:nth-child(3), .menu-container:nth-child(4) {
+  margin: 10px 0 10px 0; }
 
 .menu-subtitle {
   display: flex;
