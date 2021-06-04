@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  animation: loader 0.5s 2.2s ease-in forwards;
+  animation: loader 0.5s 1.2s ease-in forwards;
   z-index: 99;
   color: #9356DC;
   text-align: center; }
