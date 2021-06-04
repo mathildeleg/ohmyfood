@@ -8,7 +8,7 @@
     margin: 0;
     @include respond(tablet){
         width: 50%;
-        margin: 30px;
+        margin-top: 30px;
         border-radius: 50px;
         border: 2px solid $lightgray-color;
         }
