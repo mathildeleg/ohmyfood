@@ -51,6 +51,10 @@
     animation-delay: 2s;
 }
 
+.menu-container:nth-child(4){
+    animation-delay: 2.5s;
+}
+
 .menu-subtitle{
     @include flexSpaceBet();
 }
