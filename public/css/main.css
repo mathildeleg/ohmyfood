@@ -457,8 +457,34 @@ figcaption {
   align-items: center;
   justify-content: space-between; }
 
+.menu-maintitle, .menu-subtitle {
+  text-overflow: ellipsis; }
+
 @keyframes fadein {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+.slider {
+  position: absolute;
+  left: 100%;
+  background-color: #99E2D0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  height: 66.8px;
+  transition: .5s ease;
+  margin-top: -57px; }
+
+.menu-container:hover .slider {
+  width: 70px;
+  left: 82%; }
+
+.slider i {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }

@@ -35,3 +35,9 @@
     }
   }
 }
+
+@mixin check-transition-timing($type){
+  transition: $type 300ms 100ms linear;
+}
+
+$check-transition-width: 72px;
