@@ -74,7 +74,7 @@ figcaption{
 //         position: relative;
 //         background-size: 100% 200%;
 //         background-position: top left;
-//         transition: color 100ms 150ms ease;
+//         transition: color 100ms 150ms slideinup;
 //         transform: scale(1);
 // }
       
@@ -85,3 +85,23 @@ figcaption{
 //     transform: scale(0);
 //     transition: transform 100ms 20ms ease-in-out;
 // }
+
+// .emptyheart{
+//     overflow: hidden;
+//     background-color: white;
+//     height: 25px;
+// }
+
+// .fullheart{
+//     top: 100%;
+//     position: relative;
+//     transition: all 0.7s ease-out;
+//     background: linear-gradient(170deg, $secondary-color, $primary-color);
+//     height: 100%;
+// }
+  
+// .emptyheart:hover > .fullheart{
+//     top: 0;
+// }
+
+
