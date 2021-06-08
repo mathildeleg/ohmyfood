@@ -33,9 +33,9 @@
                 @include box-shadow;
                 @include respond(tablet){
                     margin: 0 15px 15px 15px;
+                }
                 @include respond(desktop){
                     width: 500px;
-                }
                 }
             }
                 img{
