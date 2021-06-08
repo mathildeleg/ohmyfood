@@ -457,9 +457,6 @@ figcaption {
   align-items: center;
   justify-content: space-between; }
 
-.menu-maintitle, .menu-subtitle {
-  text-overflow: ellipsis; }
-
 @keyframes fadein {
   0% {
     opacity: 0; }
@@ -483,7 +480,7 @@ figcaption {
   position: absolute;
   top: 25px;
   left: 25px;
-  animation: spin 2.5s reverse infinite; }
+  animation: spin 1.5s infinite; }
 
 .menu-container:hover .slider {
   width: 70px;
@@ -494,3 +491,11 @@ figcaption {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+.text {
+  text-overflow: ellipsis; }
+
+.text:hover {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
