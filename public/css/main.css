@@ -246,6 +246,33 @@ footer {
     background: linear-gradient(170deg, #ff93e1, #a16be0);
     box-shadow: 0 3px 8px #9e9e9e; }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.heart-animation {
+  width: 30px; }
+  .heart-animation .empty-heart {
+    position: relative; }
+    .heart-animation .empty-heart:hover {
+      color: transparent; }
+    .heart-animation .empty-heart:hover > .full-heart {
+      transform: scale(1); }
+  .heart-animation .full-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+    transition: transform 150ms 50ms ease-in-out;
+    animation: fadeIn 2s; }
+  .heart-animation .empty-heart {
+    margin: auto; }
+
 /* Section 1 : explore button */
 #main-title {
   height: 285px;
@@ -403,38 +430,6 @@ figcaption {
   align-items: center;
   justify-content: space-between;
   padding: 10px 25px 10px 15px; }
-
-body {
-  padding: 15px; }
-
-.descriptionHeart {
-  width: 77px; }
-  .descriptionHeart .emptyHeart {
-    font-size: 1.7rem;
-    cursor: pointer;
-    position: relative; }
-    .descriptionHeart .emptyHeart:hover {
-      color: transparent; }
-    .descriptionHeart .emptyHeart:hover > .fullHeart {
-      transform: scale(1); }
-  .descriptionHeart .fullHeart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(170deg, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
-    animation: fadeIn 10s; }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  .descriptionHeart .emptyHeart {
-    margin: auto; }
 
 /* Pages differences : main img */
 .main-img {
