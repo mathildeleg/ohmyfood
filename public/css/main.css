@@ -124,8 +124,10 @@ figcaption {
 
 .menu-subtitle {
   font-size: 15px; }
-  .menu-subtitle div {
-    font-weight: bold; }
+
+.menu-price {
+  font-size: 15px;
+  font-weight: bold; }
 
 footer i {
   font-size: 13px; }
@@ -461,7 +463,12 @@ figcaption {
   padding: 10px;
   box-shadow: 0 3px 8px #b7b7b7;
   opacity: 0;
-  animation: fadein 1s forwards; }
+  animation: fadein 1s forwards;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
 
 .menu-container:nth-child(2), .menu-container:nth-child(3), .menu-container:nth-child(4) {
   margin: 10px 0 10px 0; }
@@ -479,10 +486,7 @@ figcaption {
   animation-delay: 2.5s; }
 
 .menu-subtitle {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
+  transform-origin: left; }
 
 @keyframes fadein {
   0% {
@@ -498,8 +502,8 @@ figcaption {
   border-top-right-radius: 15px;
   overflow: hidden;
   height: 66.8px;
-  transition: .5s ease;
-  margin-top: -57px; }
+  transform-origin: right;
+  transition: transform 300ms 100ms linear; }
 
 .slider i {
   color: white;
@@ -507,11 +511,25 @@ figcaption {
   position: absolute;
   top: 25px;
   left: 25px;
-  animation: spin 1.5s infinite; }
+  animation: spin 1.5s infinite;
+  transform: scaleX(0); }
+
+.name {
+  transition: width 300ms 100ms linear;
+  width: 80%;
+  transform: scaleX(1); }
 
 .menu-container:hover .slider {
   width: 70px;
   left: 82%; }
+
+.menu-price {
+  transform-origin: right;
+  transition: transform 300ms 100ms linear;
+  align-self: flex-end;
+  position: absolute;
+  right: 15px;
+  bottom: 10px; }
 
 @keyframes spin {
   from {
