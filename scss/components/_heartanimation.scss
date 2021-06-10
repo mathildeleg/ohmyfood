@@ -1,12 +1,39 @@
-@keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-    }
+.icon {
+  fill: transparent;
+  stroke: gray;
+  stroke-width: 40px;
+  cursor: pointer;
+  position: relative;
 
-.heart-animation{
-    width: 30px;
-    @include heart-transition;
-    .empty-heart{
-        margin: auto;
-    }
+svg {
+    overflow: visible;
+    width: 25px;
 }
+
+.heart-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    stroke: none;
+}
+
+.heart-main:hover path {
+    animation: fill-heart 2s ease-in-out forwards;
+  }
+}
+
+@keyframes fill-heart {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: $primary-color;
+    stroke: $primary-color;
+  }
+  100% {
+    fill: $primary-color;
+    stroke: $primary-color;
+  }
+}
+

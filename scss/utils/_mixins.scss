@@ -35,26 +35,3 @@
     }
   }
 }
-
-@mixin heart-transition{
-  .empty-heart{
-      position: relative;
-      &:hover{
-          color: transparent;
-      }
-      &:hover > .full-heart{
-          transform: scale(1)
-      }
-  }
-  .full-heart{
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: linear-gradient(170deg, $secondary-color, $primary-color);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transform: scale(0);
-      transition: transform 150ms 50ms ease-in-out;
-      animation: fadeIn 2s;
-  }
-}
