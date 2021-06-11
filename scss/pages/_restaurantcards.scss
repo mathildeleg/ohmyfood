@@ -37,6 +37,9 @@
                 @include respond(desktop){
                     width: 500px;
                 }
+                @include respond(bigdesktop){
+                    width: 700px;
+                }
             }
                 img{
                     height: 175px;
@@ -44,8 +47,11 @@
                     object-fit: cover;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
-                    @include respond (desktop){
+                    @include respond(desktop){
                         width: 500px;
+                    }
+                    @include respond(bigdesktop){
+                        width: 700px;
                     }
                 }
 }

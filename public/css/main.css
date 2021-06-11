@@ -402,6 +402,9 @@ footer {
     @media only screen and (min-width: 1024px) {
       #restaurants figure {
         width: 500px; } }
+    @media only screen and (min-width: 1450px) {
+      #restaurants figure {
+        width: 700px; } }
   #restaurants img {
     height: 175px;
     width: 335px;
@@ -411,6 +414,9 @@ footer {
     @media only screen and (min-width: 1024px) {
       #restaurants img {
         width: 500px; } }
+    @media only screen and (min-width: 1450px) {
+      #restaurants img {
+        width: 700px; } }
 
 @media only screen and (min-width: 750px) {
   .row {
