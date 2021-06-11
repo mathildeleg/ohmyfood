@@ -1,7 +1,7 @@
 /* Pages differences : main img */
 
 .main-img{
-    height: 265px;
+    height: 260px;
     width: 100%;
     object-fit: cover;
 }
@@ -17,6 +17,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 40px 20px 60px 20px;
+    transform: translateY(-40px);
         h2{
             border-bottom: 3px solid $tertiary-color;
             width: 42px;
