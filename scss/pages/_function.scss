@@ -24,38 +24,67 @@
     @include flexColumn();
 }
 
-.list-nav{
-    @include flexRow();
-}
-
-.list-title{
-    border-radius: 20px;
-    @include box-shadow();
-    background-color: $lightgray-color;
-    height: 70px;
-    width: 325px;
-    display: flex;
+.list{
+    @include flexRow;
     align-items: center;
-    justify-content: space-around;
     margin-bottom: 20px;
-    @include respond(tablet){
-        height: 50px;
-        width: 300px;
-    }
-        p{
-            padding-right: 45px;
-        }
-            i{
-                padding-left: 10px;
-            }
-}
 
-.list-number{
-    background-color: $primary-color;
-    color: $white-color;
-    border-radius: 50px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    margin-bottom: 25px;
+    &__title{
+        position: relative;
+        left: -10px;
+        border-radius: 20px;
+        @include box-shadow();
+        background-color: $lightgray-color;
+        height: 75px;
+        width: 325px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+            @include respond(tablet){
+                height: 50px;
+                width: 350px;
+            }
+            @include respond(desktop){
+                width: 480px;
+            }
+            @include respond(bigdesktop){
+                width: 680px;
+            }
+        i{
+            padding-left: 30px;
+            @include respond(bigdesktop){
+                padding-left: 100px;
+            }
+        }
+            p{
+                padding-right: 70px;
+                @include respond(tablet){
+                    padding-right: 90px;
+                }
+                @include respond(desktop){
+                    padding-right: 220px;
+                }
+                @include respond(bigdesktop){
+                    padding-right: 260px;
+                }
+            }
+                &:hover{
+                    background-color: lighten($primary-color, 35%);
+                    i{
+                        color: $primary-color;
+                    }
+                }
+    }
+
+    &__number{
+        background-color: $primary-color;
+        color: $white-color;
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 19px;
+        z-index: 2;
+        padding: auto;
+    }
 }

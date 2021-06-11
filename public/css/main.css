@@ -82,12 +82,12 @@ h1 {
 .header-nav i {
   font-size: 20px; }
 
-.list-title {
+.list__title {
   font-weight: bold; }
-  .list-title i {
+  .list__title i {
     font-size: 20px; }
 
-.list-number {
+.list__number {
   font-size: 14px; }
 
 #location {
@@ -334,39 +334,64 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.list-nav {
+.list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
-
-.list-title {
-  border-radius: 20px;
-  box-shadow: 0 3px 8px #b7b7b7;
-  background-color: #f6f6f6;
-  height: 70px;
-  width: 325px;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
   margin-bottom: 20px; }
-  @media only screen and (min-width: 750px) {
-    .list-title {
-      height: 50px;
-      width: 300px; } }
-  .list-title p {
-    padding-right: 45px; }
-  .list-title i {
-    padding-left: 10px; }
-
-.list-number {
-  background-color: #9356DC;
-  color: white;
-  border-radius: 50px;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  margin-bottom: 25px; }
+  .list__title {
+    position: relative;
+    left: -10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px #b7b7b7;
+    background-color: #f6f6f6;
+    height: 75px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media only screen and (min-width: 750px) {
+      .list__title {
+        height: 50px;
+        width: 350px; } }
+    @media only screen and (min-width: 1024px) {
+      .list__title {
+        width: 480px; } }
+    @media only screen and (min-width: 1450px) {
+      .list__title {
+        width: 680px; } }
+    .list__title i {
+      padding-left: 30px; }
+      @media only screen and (min-width: 1450px) {
+        .list__title i {
+          padding-left: 100px; } }
+    .list__title p {
+      padding-right: 70px; }
+      @media only screen and (min-width: 750px) {
+        .list__title p {
+          padding-right: 90px; } }
+      @media only screen and (min-width: 1024px) {
+        .list__title p {
+          padding-right: 220px; } }
+      @media only screen and (min-width: 1450px) {
+        .list__title p {
+          padding-right: 260px; } }
+    .list__title:hover {
+      background-color: #f2eafb; }
+      .list__title:hover i {
+        color: #9356DC; }
+  .list__number {
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 19px;
+    z-index: 2;
+    padding: auto; }
 
 /* Section 3 : cards */
 #restaurants {
