@@ -510,14 +510,16 @@ figcaption {
     border-top-right-radius: 15px;
     overflow: hidden;
     transition: .5s ease;
-    width: 80px; }
+    width: 60px;
+    position: relative; }
   .menu-container:hover .slider i {
-    display: block; }
+    display: block;
+    animation: spin 1.5s; }
   .menu-container:hover .name > div {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 90%;
+    width: 85%;
     height: 100%; }
 
 .menu-information {
@@ -528,6 +530,32 @@ figcaption {
   flex: 1;
   padding: 10px; }
 
+.slider i {
+  color: white;
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1.5s; }
+
+.name {
+  text-overflow: ellipsis;
+  flex: 1; }
+
+.menu-price {
+  align-self: flex-end;
+  right: 15px;
+  bottom: 10px; }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
+/* fade in menu */
 .menu-container:nth-child(2), .menu-container:nth-child(3), .menu-container:nth-child(4) {
   margin: 10px 0 10px 0; }
 
@@ -543,34 +571,8 @@ figcaption {
 .menu-container:nth-child(4) {
   animation-delay: 2.5s; }
 
-.menu-subtitle {
-  transform-origin: left; }
-
 @keyframes fadein {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.slider i {
-  color: white;
-  font-size: 20px;
-  display: none;
-  top: 25px;
-  left: 25px;
-  animation: spin 1.5s infinite;
-  transform: scaleX(0); }
-
-.name {
-  text-overflow: ellipsis; }
-
-.menu-price {
-  align-self: flex-end;
-  right: 15px;
-  bottom: 10px; }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }

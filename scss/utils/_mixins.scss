@@ -40,7 +40,3 @@
     }
   }
 }
-
-@mixin check-transition-timing($type){
-  transition: $type 300ms 100ms linear;
-}
