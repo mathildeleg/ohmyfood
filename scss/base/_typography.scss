@@ -32,7 +32,7 @@ h1{
     font-weight: bold;
 }
 
-figcaption{
+.figcaption{
     font-size: 13px;
     font-weight: bold;
 }
@@ -53,7 +53,7 @@ figcaption{
 .main-title{
     font-size: 30px;
     font-style: italic;
-    font-family: Shrikhand;
+    font-family: "Shrikhand-Regular";
 }
 
 .menu h2{
@@ -81,4 +81,10 @@ figcaption{
 footer i
 {
     font-size: 13px;
+}
+
+.btn a, .btn--order{
+    text-decoration: none;
+    color: $white-color;
+    font-size: 15px;
 }

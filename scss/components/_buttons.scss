@@ -1,23 +1,22 @@
 .btn{
-    height: 50px;
     width: 215px;
     border-radius: 50px;
-    color: $white-color;
-    font-size: 15px;
     background: linear-gradient($primary-color, $secondary-color);
     border: none;
     @include box-shadow();
-        a{
-            text-decoration: none;
-            color: $white-color;
+        &--order{
+            height: 50px;
+            width: 185px;
+            margin: 45px auto 0 auto;
+            display: table;
         }
-            &--order{
-                width: 185px;
-                margin: 45px auto 0 auto;
-                display: table;
-            }
-                &:hover{
-                    background: linear-gradient(170deg, lighten($secondary-color, 5%), lighten($primary-color, 5%));
-                     @include box-shadow(darken($gray-color, 30%));
+        &--explore{
+            height: 30px;
+            padding-top: 15px;
+        }
+            &:hover{
+                background: linear-gradient(170deg, lighten($secondary-color, 5%), lighten($primary-color, 5%));
+                @include box-shadow(darken($gray-color, 30%));
             }
 }
+
