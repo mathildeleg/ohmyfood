@@ -144,14 +144,13 @@ footer i {
     #header-mainpage {
       height: 150px;
       padding-top: 40px; } }
-
-header img {
-  width: 170px;
-  height: 30px; }
-  @media only screen and (min-width: 750px) {
-    header img {
-      width: 250px;
-      height: 50px; } }
+  #header-mainpage img {
+    width: 170px;
+    height: 30px; }
+    @media only screen and (min-width: 750px) {
+      #header-mainpage img {
+        width: 250px;
+        height: 50px; } }
 
 #location {
   height: 50px;
@@ -494,60 +493,55 @@ figcaption {
     width: 42px;
     padding: 30px 0 5px 0;
     margin-bottom: 15px; }
-
-.menu-container {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 3px 8px #b7b7b7;
-  opacity: 0;
-  animation: fadein 1s forwards;
-  display: flex;
-  flex-direction: row;
-  height: 70px; }
-  .menu-container:hover .slider {
-    background-color: #99E2D0;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    overflow: hidden;
-    transition: .5s ease;
-    width: 60px;
-    position: relative; }
-  .menu-container:hover .slider i {
-    display: block;
+  .menu .menu-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px #b7b7b7;
+    opacity: 0;
+    animation: fadein 1s forwards;
+    display: flex;
+    flex-direction: row;
+    height: 70px; }
+    .menu .menu-container:hover .slider {
+      background-color: #99E2D0;
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+      overflow: hidden;
+      transition: .5s ease;
+      width: 60px;
+      position: relative; }
+    .menu .menu-container:hover .slider i {
+      display: block;
+      animation: spin 1.5s; }
+    .menu .menu-container:hover .name > div {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 85%;
+      height: 100%; }
+  .menu .menu-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px; }
+  .menu .slider i {
+    color: white;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     animation: spin 1.5s; }
-  .menu-container:hover .name > div {
-    overflow: hidden;
-    white-space: nowrap;
+  .menu .name {
     text-overflow: ellipsis;
-    width: 85%;
-    height: 100%; }
-
-.menu-information {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  padding: 10px; }
-
-.slider i {
-  color: white;
-  font-size: 20px;
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: spin 1.5s; }
-
-.name {
-  text-overflow: ellipsis;
-  flex: 1; }
-
-.menu-price {
-  align-self: flex-end;
-  right: 15px;
-  bottom: 10px; }
+    flex: 1; }
+  .menu .menu-price {
+    align-self: flex-end;
+    right: 15px;
+    bottom: 10px; }
 
 @keyframes spin {
   from {

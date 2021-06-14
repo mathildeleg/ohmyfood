@@ -21,8 +21,7 @@
             }
 }
 
-#navigation
-{
+#navigation{
     @include respond(tablet){
     display: flex;
     flex-direction: row;
