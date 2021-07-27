@@ -353,7 +353,7 @@ footer {
     width: 325px;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
     @media only screen and (min-width: 750px) {
       .list__title {
         height: 50px;
@@ -364,22 +364,6 @@ footer {
     @media only screen and (min-width: 1450px) {
       .list__title {
         width: 680px; } }
-    .list__title i {
-      padding-left: 30px; }
-      @media only screen and (min-width: 1450px) {
-        .list__title i {
-          padding-left: 100px; } }
-    .list__title p {
-      padding-right: 70px; }
-      @media only screen and (min-width: 750px) {
-        .list__title p {
-          padding-right: 90px; } }
-      @media only screen and (min-width: 1024px) {
-        .list__title p {
-          padding-right: 220px; } }
-      @media only screen and (min-width: 1450px) {
-        .list__title p {
-          padding-right: 260px; } }
     .list__title:hover {
       background-color: #f2eafb; }
       .list__title:hover i {

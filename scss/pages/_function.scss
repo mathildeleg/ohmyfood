@@ -39,7 +39,7 @@
         width: 325px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
             @include respond(tablet){
                 height: 50px;
                 width: 350px;
@@ -50,30 +50,13 @@
             @include respond(bigdesktop){
                 width: 680px;
             }
-        i{
-            padding-left: 30px;
-            @include respond(bigdesktop){
-                padding-left: 100px;
-            }
-        }
-            p{
-                padding-right: 70px;
-                @include respond(tablet){
-                    padding-right: 90px;
-                }
-                @include respond(desktop){
-                    padding-right: 220px;
-                }
-                @include respond(bigdesktop){
-                    padding-right: 260px;
-                }
-            }
                 &:hover{
                     background-color: lighten($primary-color, 35%);
-                    i{
-                        color: $primary-color;
-                    }
+                        i{
+                            color: $primary-color;
+                        }
                 }
+
     }
 
     &__number{
