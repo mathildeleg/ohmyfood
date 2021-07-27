@@ -1,9 +1,15 @@
 /* Pages differences : main img */
 
-.main-img{
-    height: 260px;
-    width: 100%;
-    object-fit: cover;
+.main-img-container{
+    display: block;
+    position: relative;
+    z-index: -1;
+    bottom: -30px;
+    .main-img{
+        height: 260px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 /* Pages differences : menu */
@@ -17,7 +23,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 40px 20px 60px 20px;
-        h2{
+        h3{
             border-bottom: 3px solid $tertiary-color;
             width: 42px;
             padding: 30px 0 5px 0;
