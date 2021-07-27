@@ -175,17 +175,20 @@ footer i {
 /* Pages differences : header */
 .header-nav {
   position: relative;
-  right: 20%;
-  padding: 10px; }
-  @media only screen and (min-width: 750px) {
-    .header-nav {
-      margin: 10px; } }
+  top: 15px; }
   .header-nav .btn-logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center; }
   .header-nav i {
-    padding-left: 20px; }
+    padding-left: 30px;
+    padding-right: 120px; }
+    @media only screen and (min-width: 750px) {
+      .header-nav i {
+        padding-right: 250px; } }
+    @media only screen and (min-width: 1024px) {
+      .header-nav i {
+        padding-right: 385px; } }
   .header-nav a {
     color: black; }
   .header-nav h1 {
