@@ -173,33 +173,29 @@ footer i {
       margin-top: 30px; } }
 
 /* Pages differences : header */
-.header-nav {
-  position: relative;
-  top: 15px; }
-  .header-nav .btn-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-  .header-nav i {
-    padding-left: 30px;
-    padding-right: 120px; }
-    @media only screen and (min-width: 750px) {
-      .header-nav i {
-        padding-right: 250px; } }
-    @media only screen and (min-width: 1024px) {
-      .header-nav i {
-        padding-right: 385px; } }
-  .header-nav a {
-    color: black; }
-  .header-nav h1 {
-    font-family: 'Shrikhand', cursive;
-    font-size: 30px; }
-  .header-nav img {
-    width: 150px;
-    height: 25px; }
-    @media only screen and (min-width: 750px) {
-      .header-nav img {
-        height: 30px; } }
+.link-logo {
+  display: flex;
+  align-items: center;
+  margin: 15px 15px 0 15px; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.header-nav a {
+  color: black; }
+
+.header-nav h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 30px; }
+
+.header-nav img {
+  width: 150px;
+  height: 25px; }
+  @media only screen and (min-width: 750px) {
+    .header-nav img {
+      height: 30px; } }
 
 footer {
   padding: 0 20px 0 20px;

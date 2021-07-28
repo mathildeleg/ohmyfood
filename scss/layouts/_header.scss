@@ -35,24 +35,19 @@
 
 /* Pages differences : header */
 
+.link-logo{
+    display: flex;
+    align-items: center;
+    margin: 15px 15px 0 15px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 .header-nav{
-    position: relative;
-    top: 15px;
-    .btn-logo{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    i{
-        padding-left: 30px;
-        padding-right: 120px;
-        @include respond(tablet){
-            padding-right: 250px;
-        }
-        @include respond(desktop){
-            padding-right: 385px;
-        }
-    }
         a{
             color: $black-color;
         }
