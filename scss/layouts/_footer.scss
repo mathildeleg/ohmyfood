@@ -24,7 +24,7 @@ footer{
                     text-decoration: none;
                     color: $white-color;
                 }
-                    ul{
+                    .footer-links{
                         @include respond(tablet){
                             @include flexSpaceBet;
                             padding-left: 30px;

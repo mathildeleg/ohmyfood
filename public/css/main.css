@@ -224,7 +224,7 @@ footer {
     text-decoration: none;
     color: white; }
   @media only screen and (min-width: 750px) {
-    footer ul {
+    footer .footer-links {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -232,7 +232,7 @@ footer {
       padding-left: 30px;
       padding-right: 30px; } }
   @media only screen and (min-width: 1024px) {
-    footer ul {
+    footer .footer-links {
       padding-left: 80px;
       padding-right: 80px; } }
 
