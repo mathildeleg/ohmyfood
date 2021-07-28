@@ -1,5 +1,5 @@
 body{
-    font-family: Roboto-Regular, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1{
@@ -9,7 +9,7 @@ h1{
 }
 
 h2{
-    font-size: 23px;
+    font-size: 18px;
     font-family: Roboto-Bold, sans-serif;
 }
 
@@ -23,7 +23,7 @@ h2{
 }
 
 .list__title {
-    font-weight: bold;
+    font-family: Roboto-Bold, sans-serif;
         i{
         font-size: 20px;
         }
@@ -52,12 +52,12 @@ h2{
 }
 
 .restaurant-name{
+    font-family: Roboto-Bold, sans-serif;
     font-weight: bold;
 }
 
 .main-title{
     font-size: 30px;
-    // font-style: italic;
     font-family: 'Shrikhand', cursive;
 }
 
@@ -66,6 +66,7 @@ h2{
 }
 
 .menu-maintitle{
+    font-family: Roboto-Bold, sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -79,6 +80,7 @@ h2{
 }
 
 .menu-price{
+    font-family: Roboto-Bold, sans-serif;
     font-size: 15px;
     font-weight: bold;
 }
