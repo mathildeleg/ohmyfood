@@ -5,7 +5,7 @@ footer{
     height: 200px;
     @include respond(tablet){
         padding: 0 30px 25px 30px;
-        height: 80px;
+        height: 100px;
     }
         img{
             height: 18px;
@@ -27,6 +27,12 @@ footer{
                     ul{
                         @include respond(tablet){
                             @include flexSpaceBet;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                        }
+                        @include respond(desktop){
+                            padding-left: 80px;
+                            padding-right: 80px;
                         }
                     }
 }
