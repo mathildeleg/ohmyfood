@@ -82,13 +82,34 @@
   }
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/roboto/Roboto-Black.ttf);
+  src: url(/fonts/roboto/Roboto-Bold.ttf);
+  src: url(/fonts/roboto/Roboto-Light.ttf);
+  src: url(/fonts/roboto/Roboto-Medium.ttf);
+  src: url(/fonts/roboto/Roboto-Regular.ttf);
+  src: url(/fonts/roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(/fonts/shrikhand/Shrikhand-Regular.otf);
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-size: 23px;
+  font-family: Roboto-Bold, sans-serif;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: Roboto-Bold, sans-serif;
 }
 
 #main-title h2 {
@@ -101,7 +122,7 @@ h1 {
 }
 
 .list__title {
-  font-weight: bold;
+  font-family: Roboto-Bold, sans-serif;
 }
 
 .list__title i {
@@ -131,20 +152,21 @@ h1 {
 }
 
 .restaurant-name {
+  font-family: Roboto-Bold, sans-serif;
   font-weight: bold;
 }
 
 .main-title {
   font-size: 30px;
-  font-style: italic;
   font-family: 'Shrikhand', cursive;
 }
 
-.menu h2 {
+.menu h3 {
   text-transform: uppercase;
 }
 
 .menu-maintitle {
+  font-family: Roboto-Bold, sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
@@ -158,6 +180,7 @@ h1 {
 }
 
 .menu-price {
+  font-family: Roboto-Bold, sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
@@ -243,32 +266,24 @@ footer i {
 }
 
 /* Pages differences : header */
-.header-nav {
+.link-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: 60px;
+  margin: 15px 15px 0 15px;
 }
 
-@media only screen and (min-width: 750px) {
-  .header-nav {
-    margin: 10px;
-  }
-}
-
-.header-nav i {
-  padding-left: 20px;
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
 }
 
 .header-nav a {
@@ -276,10 +291,6 @@ footer i {
 }
 
 .header-nav h1 {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
 }
@@ -305,7 +316,7 @@ footer {
 @media only screen and (min-width: 750px) {
   footer {
     padding: 0 30px 25px 30px;
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -336,7 +347,7 @@ footer a {
 }
 
 @media only screen and (min-width: 750px) {
-  footer ul {
+  footer .footer-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -350,6 +361,15 @@ footer a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer .footer-links {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -466,6 +486,7 @@ footer a {
 
 @media only screen and (min-width: 750px) {
   #main-title {
+    height: 350px;
     width: 50%;
     margin: 30px 0 0 20px;
     border-radius: 50px;
@@ -479,7 +500,7 @@ footer a {
 
 #main-title h2 {
   opacity: 50%;
-  padding: 20px 40px 35px 40px;
+  padding: 20px 0 35px 0;
 }
 
 @media only screen and (min-width: 750px) {
@@ -512,10 +533,13 @@ footer a {
 
 @media only screen and (min-width: 750px) {
   #function {
-    height: 285px;
+    height: 350px;
     width: 50%;
     border-radius: 50px;
     border: 2px solid #f6f6f6;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -579,9 +603,9 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media only screen and (min-width: 750px) {
@@ -603,38 +627,6 @@ footer a {
   }
 }
 
-.list__title i {
-  padding-left: 30px;
-}
-
-@media only screen and (min-width: 1450px) {
-  .list__title i {
-    padding-left: 100px;
-  }
-}
-
-.list__title p {
-  padding-right: 70px;
-}
-
-@media only screen and (min-width: 750px) {
-  .list__title p {
-    padding-right: 90px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .list__title p {
-    padding-right: 220px;
-  }
-}
-
-@media only screen and (min-width: 1450px) {
-  .list__title p {
-    padding-right: 260px;
-  }
-}
-
 .list__title:hover {
   background-color: #f2eafb;
 }
@@ -649,10 +641,17 @@ footer a {
   border-radius: 50px;
   width: 20px;
   height: 20px;
-  text-align: center;
-  line-height: 19px;
   z-index: 2;
-  padding: auto;
+}
+
+.list__number span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px;
 }
 
 /* Section 3 : cards */
@@ -804,7 +803,14 @@ footer a {
 }
 
 /* Pages differences : main img */
-.main-img {
+.main-img-container {
+  display: block;
+  position: relative;
+  z-index: -1;
+  bottom: -30px;
+}
+
+.main-img-container .main-img {
   height: 260px;
   width: 100%;
   -o-object-fit: cover;
@@ -835,7 +841,7 @@ footer a {
   padding: 40px 20px 60px 20px;
 }
 
-.menu h2 {
+.menu h3 {
   border-bottom: 3px solid #99E2D0;
   width: 42px;
   padding: 30px 0 5px 0;
